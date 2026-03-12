@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>琉</title>
+<style>
+body{
+font-family:sans-serif;
+background:#0b0b0b;
+color:white;
+padding:20px;
+}
+h1{
+color:#b300ff;
+text-align:center;
+}
+button{
+background:#b300ff;
+color:white;
+border:none;
+padding:15px;
+border-radius:10px;
+width:100%;
+font-size:18px;
+margin-top:20px;
+}
+input{
+width:60px;
+margin:2px;
+}
+.day{
+background:#1c1c1c;
+padding:10px;
+margin-top:10px;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>琉</h1>
+
+<button onclick="today()">今日入力</button>
+
+<div id="today"></div>
+
+<script>
+
+function today(){
+
+let html = "<div class='day'>";
+
+html += "みどり 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "れな 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "みき 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "まぁじゅ 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "まほ 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "りか 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "僚介 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+html += "体入 時間 <input> S <input> L <input> テキ <input> リク <input> 日払い <input><br>";
+
+html += "</div>";
+
+document.getElementById("today").innerHTML = html;
+
+}
+
+</script>
+
+</body>
+</html>
